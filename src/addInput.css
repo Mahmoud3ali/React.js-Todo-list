@@ -1,0 +1,73 @@
+.header .addInput
+{
+    width: 100%;
+    height: 50px;
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    text-indent: 30px;
+
+    background:rgba(255,255,255,0.2);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-radius: 25px;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+.header .addInput::-webkit-input-placeholder
+{
+    color: rgba(255,255,255,0.75);
+}
+.header .addInput::-moz-input-placeholder
+{
+    color: rgba(255,255,255,0.75);
+}
+.header .addInput::-ms-input-placeholder
+{
+    color: rgba(255,255,255,0.75);
+}
+.header .addButton
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    border-radius: 25px;
+    background: #fff;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+.header .addButton .SVG
+{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -8px;
+}
+.header .addButton .SVG .fill
+{
+    fill:#25b99a;
+}

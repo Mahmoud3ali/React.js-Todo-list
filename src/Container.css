@@ -1,0 +1,163 @@
+.list
+{
+    list-style-type: none;
+}
+.container
+{
+    width: 100%;
+    position: relative;
+    padding: 15px 0 0 0;
+}
+ul.list
+{
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+ul.list li
+{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    font-size: 17px;
+    font-weight: 500;
+    min-height: 50px;
+    color: #444;
+    line-height: 22px;
+    padding: 20px 0 0 10px; 
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
+    margin:0 0 10px 0;
+}
+ul.list li:last-of-type
+{
+    margin:0;
+}
+ul.list li .buttons 
+{
+    width: 150px;
+    height: 50px;
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul.list li .buttons button 
+{
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: none;
+    position: relative;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+ul.list li .buttons button .SVG 
+{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 -5px;
+}
+ul.list li .buttons button.edit .SVG .fill 
+{
+    fill: #25b99a;
+}
+ul.list li .buttons button.edit:hover .SVG .fill 
+{
+    fill: #e85656;
+}
+
+ul.list li .buttons button.complete .SVG
+{
+    border-radius: 11px;
+    border: 1.5px solid #25b99a;
+    transition: background 0.2s ease;
+}
+
+ul.list.completed li .buttons button.complete .SVG 
+{
+    background: #25b99a;
+    border: 0px;
+}
+  
+ul.list li .buttons button.complete:hover .SVG 
+{
+    background: rgba(37, 185, 154, 0.75);
+}
+  
+ul.list li .buttons button.complete:hover .SVG .fill 
+{
+    fill: #fff;
+}
+
+ul.list.completed li .buttons button.complete .SVG .fill 
+{
+    fill: #fff;
+}
+
+ul.list li .buttons button .SVG .fill 
+{
+    transition: fill 0.2s ease;
+}
+ul.list li .buttons button.remove .SVG .fill 
+{
+    fill: #c0cecb;
+}
+
+ul.list li .buttons button.remove:hover .SVG .fill 
+{
+    fill: #e85656;
+}
+  
+ul.list li .buttons button.complete .SVG .fill 
+{
+    fill: #25b99a;
+}
+ul.list.completed 
+{
+    position: relative;
+    padding: 60px 0 0 0;
+}
+
+ul.list.completed:before 
+{
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: #d8e5e0;
+  
+    position: absolute;
+    top: 30px;
+    left: 50%;  
+  
+    margin: 0 0 0 -75px;
+}
+
+ul.list.todo:empty:after 
+{
+    content: 'You have nothing to-do!';
+    margin: 15px 0 0 0;
+}
+
+ul.list.completed:empty:after 
+{
+    content: 'You have yet to complete any tasks.';
+}
+ul.list.todo:after,ul.list.completed:after 
+{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}
